@@ -16,3 +16,7 @@ a {
   list-style: none;
   gap: 17px;
   }
+
+  .project-thumbnail{
+    height: 50%;
+  }
