@@ -9,7 +9,7 @@ a {
   text-decoration: none;
 }
 
-.social-icons {
+.social-icons {  
   display: flex;
   flex-direction: row;
   justify-content: center;
