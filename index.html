@@ -24,7 +24,7 @@
           <!-- Todo - Update links of section -->
           <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
           <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#contact-me" class="nav-link">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -32,7 +32,7 @@
   <!-- add scrollspy -ram -->
   <div class="container-fluid main-container" data-bs-spy="scroll" data-bs-target="#page-navigation" data-bs-offset="0"
     tab-index="0">
-    <section class="text-center mt-5 pt-5" id="#portfolio">
+    <section class="text-center section-portfolio mt-5 pt-5" id="#portfolio">
       <h1>Hey there. I’m Umoru. <br>
         I’m a software developer</h1>
       <div class="text-center mt-1">
@@ -103,8 +103,7 @@
           </div>
         </div>
         <div class="card col-sm-4">
-          <img class="card-img-top project-thumbnail" src="images/Img Plaholder.svg"
-            alt="image representing a project">
+          <img class="card-img-top project-thumbnail" src="images/Img Plaholder.svg" alt="image representing a project">
           <div class="card-body text-center">
             <h2>Multi-Post Stories<br>Gain+Glory</h2>
             <div class="tech-list">
@@ -120,7 +119,7 @@
           <div class="card-body text-center">
             <h2>Multi-Post Stories<br>Gain+Glory</h2>
             <div class="tech-list">
-              <span class="badge bg-secondary">Ruby on Rails</span> 
+              <span class="badge bg-secondary">Ruby on Rails</span>
               <span class="badge bg-secondary">CSS</span>
               <span class="badge bg-secondary">Javascript</span>
             </div>
@@ -132,13 +131,15 @@
     <!-- about me section -- umoru -->
     <section class="about-section p-5 m-5">
       <h2 class="text-center mb">About me</h2>
-      <p class="about-text text-center"> I can help you build a product , feature or website Look through some of my work and <br> 
-        experience! If you like what you see and have a project you need coded,<br> 
+      <p class="about-text text-center"> I can help you build a product , feature or website Look through some of my
+        work and <br>
+        experience! If you like what you see and have a project you need coded,<br>
         don’t hestiate to contact me.</p>
       <a href="" class="btn btn-success mt-5">Get My Resume</a>
 
       <div class="card col-sm-4">
-        <img class="card-frame-works text-center" style="width: 8rem;" src="./images/globe.png" alt="image about the globe">
+        <img class="card-frame-works text-center" src="./images/globe.png"
+          alt="image about the globe">
         <h2>Languages</h2>
       </div>
       <div class="">
@@ -148,7 +149,8 @@
         <span class="badge bg-secondary">CSS</span>
       </div>
       <div class="card col-sm-4">
-        <img class="card-frame-works text-center" style="width: 8rem;" src="./images/Icon1.png" alt="image about the globe">
+        <img class="card-frame-works text-center"  src="./images/Icon1.png"
+          alt="image about the globe">
         <h2>Languages</h2>
       </div>
       <div class="">
@@ -159,7 +161,8 @@
         <span class="badge bg-secondary">Selenium</span>
       </div>
       <div class="card col-sm-4">
-        <img class="card-frame-works text-center" style="width: 8rem;" src="./images/skils.png" alt="image about the globe">
+        <img class="card-frame-works text-center" src="./images/skils.png"
+          alt="image about the globe">
         <h2>Languages</h2>
       </div>
       <div class="">
@@ -168,6 +171,38 @@
         <span class="badge bg-secondary">Codepen</span>
         <span class="badge bg-secondary">Gitlab</span>
         <span class="badge bg-secondary">Terminal</span>
+      </div>
+      <!-- Adding contact me section and form -ram -->
+    </section>
+   
+    <section id="#contact-me" class="section-contact">
+      <div class="row p-5 m-5">
+        <div class="col-sm-6 p-5 text-center">
+          <h3>I'm always interested in hearing about new projects, <br> so if you'd like to chat please get in touch.</h3>
+        </div>
+        <div class="col-sm-6">
+          <form action="#" type="post" class="contact-form">
+            <div class="row">
+              <div class="col p-0 mx-0 my-2 me-1">
+                <label for="#firstName" class="form-label" hidden>
+                </label>
+                <input type="text" id="firstName" class="form-control" placeholder="First Name" required>
+              </div>
+              <div class="col p-0 mx-0 my-2">
+                <label for="#lastName" class="form-label" hidden>
+                </label>
+                <input type="text" id="lastName" class="form-control" placeholder="Last Name" required>
+              </div>
+              <label for="#emailId" class="form-label" hidden>
+              </label>
+              <input type="email" id="lastName" class="form-control mt-2" placeholder="Email id." required>
+              <label for="#userMessage" class="form-label" hidden>
+              </label>
+              <textarea class="form-control mt-2" name="usermessage" id="userMessage" cols="30" rows="4" placeholder="enter a message.. "></textarea>
+              <button class="btn btn-success col-sm-2 mt-3" type="submit"> Get in touch </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </div>
